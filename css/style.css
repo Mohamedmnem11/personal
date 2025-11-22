@@ -675,3 +675,66 @@ a:hover{
         flex-wrap: wrap;
     }
 }
+
+/* Education Section */
+.education {
+    background-color: #fff;
+    padding-block: 5rem;
+}
+
+.education h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.education h1 span {
+    color: var(--main-color);
+}
+
+.edu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 3rem;
+}
+
+.edu-box {
+    background: #f0f4f9;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgb(1 1 1 /15%);
+    transition: 0.4s;
+}
+
+.edu-box:hover {
+    transform: scale(1.05);
+}
+
+.edu-box h3 {
+    font-size: 2.4rem;
+    color: var(--main-color);
+    margin-bottom: .7rem;
+}
+
+.edu-box h4 {
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+    color: #333;
+}
+
+.edu-box .year {
+    font-size: 1.4rem;
+    color: gray;
+}
+
+.edu-box p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.8;
+}
+
+@media (max-width:500px) {
+    .edu-container {
+        grid-template-columns: auto;
+    }
+}
