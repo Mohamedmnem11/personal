@@ -1,201 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Mohamed Abdelmonem | Full-Stack Developer
+    </title>
+
+    <meta
+        name="description"
+        content="Mohamed Abdelmonem - Frontend and Backend Developer specializing in modern web applications, APIs and software solutions."
+    >
+
+    <meta
+        name="author"
+        content="Mohamed Abdelmonem"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
 </head>
+
+
 <body>
 
-    <section class="header section-reveal"  >
+
+<!-- ======================================================
+     HEADER
+====================================================== -->
+
+<header class="header" id="header">
+
+    <a href="#home" class="logo">
+        Mohamed<span>.</span>
+    </a>
 
 
-        <div class="name">
+    <nav class="nav" id="nav">
 
-            <h1>Mohamed</h1>
+        <a href="#home" class="nav-link active">
+            Home
+        </a>
+
+        <a href="#about" class="nav-link">
+            About
+        </a>
+
+        <a href="#skills" class="nav-link">
+            Skills
+        </a>
+
+        <a href="#education" class="nav-link">
+            Education
+        </a>
+
+        <a href="#services" class="nav-link">
+            Services
+        </a>
+
+        <a href="#projects" class="nav-link">
+            Projects
+        </a>
+
+        <a href="#contact" class="nav-link">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Open menu"
+    >
+        <i class="fas fa-bars"></i>
+    </button>
+
+</header>
+
+
+
+<main>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section class="hero" id="home">
+
+
+    <div class="hero-content">
+
+        <p class="eyebrow">
+            Hello, I'm Mohamed Abdelmonem
+        </p>
+
+
+        <h1>
+            Frontend &
+            <span>
+                Backend Developer
+            </span>
+        </h1>
+
+
+        <h2>
+            <span id="typingText"></span>
+        </h2>
+
+
+        <p class="hero-description">
+
+            Computer Engineering graduate passionate about
+            building modern applications, responsive interfaces,
+            reliable backend systems and practical software
+            solutions.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#projects"
+                class="btn primary-btn"
+            >
+                View Projects
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+
+            <a
+                href="cv.pdf"
+                class="btn secondary-btn"
+                download
+            >
+                Download CV
+                <i class="fas fa-download"></i>
+            </a>
+
         </div>
-        <div class="nav" id="nav">
-            <a class="nav-link active" id="homeLink" href="#home">Home</a>
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#education">Education</a>
-            <a class="nav-link" href="#service">Service</a>
-            <a class="nav-link" href="#project">Projects</a>
-            <a class="nav-link" href="#contact">Contact</a>
+
+
+        <div class="social-links">
+
+            <a
+                href="https://github.com/Mohamedmnem11/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-github"></i>
+            </a>
+
+
+            <a
+                href="https://www.linkedin.com/in/mohamedmnem"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+
+            <a
+                href="https://youtube.com/@mohamedmnem1191"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-youtube"></i>
+            </a>
+
         </div>
-        <!-- <div class="mainColor">
 
-            <input type="color" id="colorPicker" value="#7231ae">
-
-
-        </div> -->
-
-      
-        <div id="btn" class="fas fa-bars"></div>
-
-    </section>
-
-    <div id="home">
-        <section class="main section-reveal">
-            
-                <div class="content">
-                 <p>Hello,I'm Mohamed </p>
-                 <h3>
-                   
-                    <span id="typing-text"></span>
-                    <!-- <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p> -->
-  
-                    <!-- <span>F</span><span>r</span><span>o</span><span>n</span><span>t</span><span>-</span><span>E</span><span>n</span><span>d</span>
-                    <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span> -->
-                 </h3>
-                 <p>I build life changing courses </p>
-                 <a href="cv.pdf" download="" >Download my Cv</a>
-                  
-         
-                 <div class="three">
-                 <a  href="http://www.linkedin.com/in/mohamed-mnem-"><i class="fab fa-linkedin -3x"></i></a>
-                <a href="https://github.com/Mohamedmnem11/"> <i class="fab fa-github -3x"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100026858467642&mibextid=ZbWKwL"> <i class="fab fa-facebook -3x"></i></a>
-                <a href="https://youtube.com/@mohamedmnem1191?si=2RnE5Apx9HEmz3Fg"> <i class="fab fa-youtube -3x"></i></a>
-                 </div>
-                </div>
-
-                <div class="image">
-                    <img src="image/٢٠٢٣٠٩١٣_١٩٣١٤٥.jpg" alt="">
-                </div>
-         
-            
-        </section>
     </div>
 
-    <section id="about" class="about section-reveal">
 
-        <div class="image_about">
-            <img src="image/٢٠٢٣٠٩١٣_١٩٣١٤٥.jpg" alt="">
-        </div>
 
-        <div class="content_about">
+    <div class="hero-image">
 
-            <h1>About <span>Me</span></h1>
-            <h2>Front-End Developer</h2>
+        <div class="image-ring">
 
-            <p>
-               I’m Mohamed Abdelmonem Mahmoud, a final-year Computer Engineering student at Shoubra Faculty of Engineering – Benha University.
+            <img
+                src="image/profile.jpg"
+                alt="Mohamed Abdelmonem"
+            >
 
-            I’m passionate about front-end development and building responsive, user-friendly web interfaces. I have hands-on experience with HTML, CSS, JavaScript, Bootstrap , angular and React.
-
-            I’ve completed multiple training programs, including the Digital Egypt Pioneers and IEEE Web Team, and I enjoy turning UI designs into functional websites. I’m constantly learning and looking forward to contributing to real-world projects.
-
-            </p>
-
-        </div>
-
-    </section>
-    <section class="skill section-reveal">
-
-        <h2>My Skills</h2>
-
-        <div class="flex-skill">
-
-        <div class="container">
-            <div class="skill">
-                <span class="title">HTML</span>
-                <div class="bar">
-                    <span class="per">
-                        <span class="tool">100%</span>
-                    </span>
-                </div>
-            </div>
-    
-        
-                    <div class="skill">
-                        <span class="title">CSS</span>
-                        <div class="bar">
-                            <span class="per Css">
-                                <span class="tool">90%</span>
-                            </span>
-                        </div>
-                    </div>
-                  
-                   
-                        <div class="skill">
-                            <span class="title">JAVASCRIPT</span>
-                            <div class="bar">
-                                <span class="per Js">
-                                    <span class="tool">80%</span>
-                                </span>
-                            </div>
-                        </div>
-    
-                        
-                            <div class="skill">
-                                <span class="title">bootstrap</span>
-                                <div class="bar">
-                                    <span class="per boot">
-                                        <span class="tool">80%</span>
-                                    </span>
-                                </div>
-                            </div> 
-                            
-                            
-                            
-            <div class="skill">
-                <span class="title">React js</span>
-                <div class="bar">
-                    <span class="per React">
-                        <span class="tool">60%</span>
-                    </span>
-                </div>
-            </div>
-
-          </div>
-    
-
-          <div class="image-skill">
-
-            <img src="image/work3.jpg" alt="">
-
-          </div>
-        </div>
-
-    </section>
-    
-
-    <section id="education" class="education section-reveal">
-
-    <h1>My <span>Education</span></h1>
-
-    <div class="edu-container">
-
-        <div class="edu-box">
-            <h3>Bachelor of Computer Engineering</h3>
-            <h4>Benha University – Shoubra Faculty of Engineering</h4>
-            <span class="year">2021 – 2026</span>
-            <p>
-                Final-year student specializing in Computer Engineering with strong skills in
-                front-end development, software engineering, and problem solving.
-            </p>
-        </div>
-
-        <div class="edu-box">
-            <h3>DEPI Program – Web Development Track</h3>
-            <h4>Digital Egypt Pioneers Initiative</h4>
-            <span class="year">2024</span>
-            <p>
-                Completed front-end training including HTML, CSS, JS, Bootstrap, and Angular.
-            </p>
-        </div>
-
-        <div class="edu-box">
-            <h3>IEEE Web Training</h3>
-            <h4>IEEE Benha Student Branch</h4>
-            <span class="year">2025</span>
-            <p>
-                Practical training on teamwork, building UI, and converting designs to websites.
-            </p>
         </div>
 
     </div>
@@ -204,131 +215,1314 @@
 
 
 
-    <section class="service section-reveal" id="service">
+<!-- ======================================================
+     ABOUT
+====================================================== -->
 
-        
-            <h1>My <span>Services</span></h1>
-    
-            <div class="four">
-                <div>
-                    <i class="fa-solid fa-pen-ruler"></i>
-                    <h3>Web Design</h3>
-                   <p>Responsive Design: Ensures that websites are accessible and functional across various devices and screen sizes.</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-rocket"></i>
-                    <h3>Fast Performance</h3>
-                    <p>Optimized Loading Times: Reducing file sizes, minifying CSS and JavaScript, and utilizing lazy loading for images and resources.</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Clean Code</h3>
-                   <p>Modular Code: Writing reusable components, making the codebase easy to maintain and scale and improves accessibility and SEO.</p>
-                </div>
-    
-            </div>
-    
-        </section>
+<section class="section" id="about">
+
+    <div class="section-heading">
+
+        <p>
+            Get to know me
+        </p>
+
+        <h2>
+            About
+            <span>
+                Me
+            </span>
+        </h2>
+
+    </div>
 
 
-        <section id="project" class="project section-reveal">
-
-            <h1>My <span>Projects</span></h1>
+    <div class="about-grid">
 
 
-            <div class="pro">
-                <div class="A">
-                    <img src="image/bakery.png" alt="loading..." >
-                    
-            
-                    <div class="a">
-                        <span>Bakery Project</span>
-                        <a target="_blank" href="https://mohamedmnem11.github.io/Baker/"><i class="fa fa-link"></i></a>
-                    </div>
-                </div>
-    
-    
-              
-    
-                <div class="A">
-                    <img src="image/117.jpg" alt="loading...">
-                    
-                
-                    <div class="a">
-                            
-                    <span>TRAVELS PROJECT </span>
-                    <a target="_blank" href="https://mohamedmnem11.github.io/T_PRo/"><i class="fa fa-link"></i></a>
-                    </div>
-                </div>
-    
-                <div class="A">
-                    <img src="image/174793612-ebef3369-3427-4ea0-91af-1765c8be74ce.jpg" alt="loading...">
-                  
-                    <div class="a">
-                        <span>FaceBook Clone </span>
-                    <a target="_blank" href="https://mohamedmnem11.github.io/FaceBook/"><i class="fa fa-link"></i></a>
-                    </div>
-                    
-                </div>
+        <div class="about-image">
 
-                <div class="A">
-                    <img src="image/Screenshot 2025-07-14 075621.png" alt="loading..." >
-                    
-            
-                    <div class="a">
-                        <span>Recipe Website</span>
-                        <a target="_blank" href="https://mohamedmnem11.github.io/RecipeRest/"><i class="fa fa-link"></i></a>
-                    </div>
-                </div>
-    
-              
-            </div>
-        </section>
+            <img
+                src="image/profile.jpg"
+                alt="Mohamed Abdelmonem"
+                loading="lazy"
+            >
 
-
-        
-    <section id="contact" class="contact section-reveal">
-        <div class="contanier">
-            <div class="sec-top">
-                <h1>Contact <span>Me</span></h1>
-            </div>
-
-            
-   
-
-            <div class="contact-icons">
-                <h2><i class="fab fa-whatsapp   i-green"></i>  <a href="tel:+201129255054"> +201129255054</a> </h2>
-                <h2><i class="fas fa-envelope   i-blue"></i>  <a href="mailto:mohamedmnem90@gmail.com"> mohamedmnem90@gmail.com</a> </h2>
-            </div>
-
-
-            <form action="">
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
-                <input type="number" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email Address" required>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <input type="submit" class="btn" value="submit">
-            </form>
-        </div>
-    </section>
-
-    <section class="footer ">
-        <div class="foot">
-            <span class="a">Copyrights&copy;</span>
-            <span class="b" >  Mohamed Abdelmonem </span>
-        </div>
-        <div class="icons">
-        
-            <a href="http://www.linkedin.com/in/mohamed-mnem-"><i class="fab fa-linkedin -3x"></i></a>
-            <a href="https://github.com/Mohamedmnem11/"> <i class="fab fa-github -3x"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100026858467642&mibextid=ZbWKwL"> <i class="fab fa-facebook -3x"></i></a>
-            <a href="https://youtube.com/@mohamedmnem1191?si=2RnE5Apx9HEmz3Fg"> <i class="fab fa-youtube -3x"></i></a>
         </div>
 
-    </section>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+
+        <div class="about-content">
+
+            <span class="badge">
+                Computer Engineering Graduate
+            </span>
+
+
+            <h3>
+                Building applications from
+                frontend to backend.
+            </h3>
+
+
+            <p>
+
+                I'm Mohamed Abdelmonem, a Computer Engineering
+                graduate focused on Frontend and Backend
+                Development.
+
+            </p>
+
+
+            <p>
+
+                I enjoy transforming ideas into practical
+                applications using modern technologies,
+                clean code and reliable architectures.
+
+            </p>
+
+
+            <div class="about-points">
+
+                <div>
+                    <i class="fas fa-check-circle"></i>
+                    Responsive Frontend Interfaces
+                </div>
+
+                <div>
+                    <i class="fas fa-check-circle"></i>
+                    Backend APIs & Business Logic
+                </div>
+
+                <div>
+                    <i class="fas fa-check-circle"></i>
+                    Database Integration
+                </div>
+
+                <div>
+                    <i class="fas fa-check-circle"></i>
+                    Team Collaboration
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     SKILLS
+====================================================== -->
+
+<section class="section skills-section" id="skills">
+
+    <div class="section-heading center">
+
+        <p>
+            My technical stack
+        </p>
+
+        <h2>
+            Technical
+            <span>
+                Skills
+            </span>
+        </h2>
+
+    </div>
+
+
+    <div class="skills-grid">
+
+
+        <!-- FRONTEND -->
+
+        <article class="skill-card">
+
+            <div class="skill-icon">
+                <i class="fas fa-code"></i>
+            </div>
+
+            <h3>
+                Frontend
+            </h3>
+
+            <div class="tags">
+
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+                <span>React</span>
+                <span>Angular</span>
+                <span>Bootstrap</span>
+                <span>Tailwind CSS</span>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- BACKEND -->
+
+        <article class="skill-card">
+
+            <div class="skill-icon">
+                <i class="fas fa-server"></i>
+            </div>
+
+            <h3>
+                Backend
+            </h3>
+
+            <div class="tags">
+
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>REST API</span>
+                <span>JWT</span>
+                <span>WebSocket</span>
+                <span>Spring Boot</span>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- DATABASE -->
+
+        <article class="skill-card">
+
+            <div class="skill-icon">
+                <i class="fas fa-database"></i>
+            </div>
+
+            <h3>
+                Database
+            </h3>
+
+            <div class="tags">
+
+                <span>MongoDB</span>
+                <span>PostgreSQL</span>
+                <span>SQL</span>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- NETWORKING -->
+
+        <article class="skill-card">
+
+            <div class="skill-icon">
+                <i class="fas fa-network-wired"></i>
+            </div>
+
+            <h3>
+                Networking
+            </h3>
+
+            <div class="tags">
+
+                <span>CCNA</span>
+                <span>TCP/IP</span>
+                <span>Routing</span>
+                <span>Switching</span>
+                <span>Network Security</span>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- TOOLS -->
+
+        <article class="skill-card">
+
+            <div class="skill-icon">
+                <i class="fas fa-toolbox"></i>
+            </div>
+
+            <h3>
+                Tools
+            </h3>
+
+            <div class="tags">
+
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Postman</span>
+                <span>VS Code</span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     EDUCATION
+====================================================== -->
+
+<section class="section" id="education">
+
+    <div class="section-heading center">
+
+        <p>
+            Academic background
+        </p>
+
+        <h2>
+            Education &
+            <span>
+                University
+            </span>
+        </h2>
+
+    </div>
+
+
+    <div class="education-card">
+
+
+        <div class="education-icon">
+
+            <i class="fas fa-graduation-cap"></i>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Computer Engineering
+            </h3>
+
+            <h4>
+                Benha University
+            </h4>
+
+            <p>
+                Computer Engineering Department
+            </p>
+
+            <span class="education-date">
+                2021 — 2026
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     SERVICES
+====================================================== -->
+
+<section class="section" id="services">
+
+    <div class="section-heading center">
+
+        <p>
+            What I build
+        </p>
+
+        <h2>
+            My
+            <span>
+                Services
+            </span>
+        </h2>
+
+    </div>
+
+
+    <div class="services-grid">
+
+
+        <article class="service-card">
+
+            <i class="fas fa-laptop-code"></i>
+
+            <h3>
+                Frontend Development
+            </h3>
+
+            <p>
+
+                Modern, responsive and interactive
+                user interfaces using modern frontend
+                technologies.
+
+            </p>
+
+        </article>
+
+
+
+        <article class="service-card">
+
+            <i class="fas fa-server"></i>
+
+            <h3>
+                Backend Development
+            </h3>
+
+            <p>
+
+                REST APIs, authentication, business
+                logic, databases and reliable backend
+                architectures.
+
+            </p>
+
+        </article>
+
+
+
+        <article class="service-card">
+
+            <i class="fas fa-layer-group"></i>
+
+            <h3>
+                Full-Stack Development
+            </h3>
+
+            <p>
+
+                Complete applications connecting
+                frontend interfaces with backend
+                services and databases.
+
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     PROJECTS
+====================================================== -->
+
+<section class="section projects-section" id="projects">
+
+    <div class="section-heading center">
+
+        <p>
+            My selected work
+        </p>
+
+        <h2>
+            Featured
+            <span>
+                Projects
+            </span>
+        </h2>
+
+    </div>
+
+
+
+    <!-- FILTERS -->
+
+    <div class="project-filters">
+
+        <button
+            class="filter-btn active"
+            data-filter="all"
+        >
+            All
+        </button>
+
+
+        <button
+            class="filter-btn"
+            data-filter="frontend"
+        >
+            Frontend
+        </button>
+
+
+        <button
+            class="filter-btn"
+            data-filter="backend"
+        >
+            Backend
+        </button>
+
+
+        <button
+            class="filter-btn"
+            data-filter="university"
+        >
+            University
+        </button>
+
+
+        <button
+            class="filter-btn"
+            data-filter="excel"
+        >
+            Excel
+        </button>
+
+    </div>
+
+
+
+    <div class="projects-grid" id="projectsGrid">
+
+
+
+        <!-- ==================================================
+             QURAN TECH
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="frontend university"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="image/quran-tech.png"
+                    alt="Quran Tech"
+                    loading="lazy"
+                >
+
+                <span class="project-type">
+                    Frontend
+                </span>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <span class="project-label">
+                    Graduation Project
+                </span>
+
+
+                <h3>
+                    Quran Tech
+                </h3>
+
+
+                <p>
+
+                    Interactive Quran learning platform
+                    developed as a team graduation project
+                    and selected among the Top 12 projects
+                    at Benha University.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>React</span>
+                    <span>Frontend</span>
+                    <span>UI/UX</span>
+                    <span>TypeScript</span>
+                    <span>shadcn</span>
+                    <span>Tailwind CSS</span>
+
+                </div>
+
+
+                <a
+                    href="project-details.html?project=quran-tech"
+                    class="project-link"
+                >
+                    View Details
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==================================================
+             ROADX
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="backend"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="image/roadx.jpeg"
+                    alt="RoadX"
+                    loading="lazy"
+                >
+
+                <span class="project-type">
+                    Backend
+                </span>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <span class="project-label">
+                    Real-World Application
+                </span>
+
+
+                <h3>
+                    RoadX
+                </h3>
+
+
+                <p>
+
+                    Smart driving application combining
+                    dashcam recording, roadside assistance
+                    and driver monitoring.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>Backend</span>
+                    <span>API</span>
+                    <span>Database</span>
+                    <span>Payment Integration</span>
+
+                </div>
+
+
+                <a
+                    href="project-details.html?project=roadx"
+                    class="project-link"
+                >
+                    View Details
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==================================================
+             BAKERY
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="frontend"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="image/bakery.png"
+                    alt="Bakery Website"
+                    loading="lazy"
+                >
+
+                <span class="project-type">
+                    Frontend
+                </span>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <h3>
+                    Bakery Website
+                </h3>
+
+
+                <p>
+
+                    Responsive bakery website with a clean
+                    visual interface and modern layout.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+
+                <a
+                    href="project-details.html?project=bakery"
+                    class="project-link"
+                >
+                    View Details
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==================================================
+             TRAVEL
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="frontend"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="image/travel.jpg"
+                    alt="Travel Website"
+                    loading="lazy"
+                >
+
+                <span class="project-type">
+                    Frontend
+                </span>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <h3>
+                    Travel Website
+                </h3>
+
+
+                <p>
+
+                    Responsive travel website focused on
+                    modern layouts and visual presentation.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+
+                <a
+                    href="project-details.html?project=travel"
+                    class="project-link"
+                >
+                    View Details
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==================================================
+             FACEBOOK
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="frontend"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="image/facebook.jpg"
+                    alt="Facebook Clone"
+                    loading="lazy"
+                >
+
+                <span class="project-type">
+                    Frontend
+                </span>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <h3>
+                    Facebook Clone
+                </h3>
+
+
+                <p>
+
+                    Social-media-inspired interface created
+                    to practice responsive layouts and UI
+                    development.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+
+                <a
+                    href="project-details.html?project=facebook"
+                    class="project-link"
+                >
+                    View Details
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==================================================
+             RECIPE
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="frontend"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="image/recipe.png"
+                    alt="Recipe Website"
+                    loading="lazy"
+                >
+
+                <span class="project-type">
+                    Frontend
+                </span>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <h3>
+                    Recipe Website
+                </h3>
+
+
+                <p>
+
+                    Responsive recipe website focused on
+                    clear content presentation and usability.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>API Integration</span>
+                    <span>Bootstrap</span>
+
+                </div>
+
+
+                <a
+                    href="project-details.html?project=recipe"
+                    class="project-link"
+                >
+                    View Details
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==================================================
+             EXCEL SALES
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="excel"
+        >
+
+            <div class="project-image project-placeholder">
+
+                  <img
+                    src="image/excel-sales.png"
+                    alt="Sales Performance Dashboard"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="project-content">
+
+                <span class="project-label">
+                    Data Analysis
+                </span>
+
+
+                <h3>
+                    Sales Performance Dashboard
+                </h3>
+
+
+                <p>
+
+                    Excel-based sales analysis dashboard
+                    for tracking performance, trends and
+                    business insights.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>Excel</span>
+                    <span>Dashboard</span>
+                    <span>Data Analysis</span>
+
+                </div>
+
+
+                <a
+                    href="project-details.html?project=excel-sales"
+                    class="project-link"
+                >
+                    View Details
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==================================================
+             POWER SUPPLY
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="university"
+        >
+
+            <div class="project-image project-placeholder">
+
+                  <img
+                    src="image/power-supply.png"
+                    alt="Power Supply Project"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="project-content">
+
+                <h3>
+                    Power Supply
+                </h3>
+
+
+                <p>
+
+                    Design and implementation of a regulated linear DC power supply circuit using a transformer, rectifier, filter, and LM317 voltage regulator.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>University</span>
+                    <span>Electronics</span>
+
+                </div>
+
+
+                <a
+                    href="project-details.html?project=power-supply"
+                    class="project-link"
+                >
+                    View Details
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==================================================
+             DIGITAL CLOCK
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="university"
+        >
+
+            <div class="project-image project-placeholder">
+
+                  <img
+                    src="image/digital-clock.png"
+                    alt="Digital Clock Project"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="project-content">
+
+                <h3>
+                    Digital Clock
+                </h3>
+
+
+                <p>
+
+                    A 24-hour digital clock built with logic gates, BCD counters, and 7-segment displays, featuring manual time setting.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>Digital Systems</span>
+                    <span>University</span>
+
+                </div>
+
+
+                <a
+                    href="project-details.html?project=digital-clock"
+                    class="project-link"
+                >
+                    View Details
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==================================================
+             8-BIT CPU
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="university"
+        >
+
+            <div class="project-image project-placeholder">
+
+                <img
+                    src="image/bit-cpu.png"
+                    alt="8-BIT CPU Project"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="project-content">
+
+                <h3>
+                    8-BIT CPU
+                </h3>
+
+
+                <p>
+
+                    Simulated 8-bit CPU design with a custom instruction set, ALU, register file, and a hardwired control unit.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>CPU</span>
+                    <span>Digital Systems</span>
+                    <span>University</span>
+
+                </div>
+
+
+                <a
+                    href="project-details.html?project=8bit-cpu"
+                    class="project-link"
+                >
+                    View Details
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     CONTACT
+====================================================== -->
+
+<section class="section contact-section" id="contact">
+
+    <div class="section-heading center">
+
+        <p>
+            Let's work together
+        </p>
+
+        <h2>
+            Contact
+            <span>
+                Me
+            </span>
+        </h2>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+        <div class="contact-info">
+
+            <h3>
+                Have a project in mind?
+            </h3>
+
+
+            <p>
+
+                I'm open to development opportunities,
+                freelance projects and collaborations.
+
+            </p>
+
+
+            <a href="mailto:mohamedmnem90@gmail.com">
+
+                <i class="fas fa-envelope"></i>
+
+                mohamedmnem90@gmail.com
+
+            </a>
+
+
+            <a href="tel:+201129255054">
+
+                <i class="fas fa-phone"></i>
+
+                +20 112 925 5054
+
+            </a>
+
+
+            <a
+                href="https://github.com/Mohamedmnem11/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <i class="fab fa-github"></i>
+
+                GitHub
+
+            </a>
+
+
+            <a
+                href="https://www.linkedin.com/in/mohamed-mnem"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <i class="fab fa-linkedin"></i>
+
+                LinkedIn
+
+            </a>
+
+        </div>
+
+
+
+        <form class="contact-form" id="contactForm">
+
+            <div class="form-row">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+            </div>
+
+
+            <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+            >
+
+
+            <textarea
+                name="message"
+                rows="7"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="btn primary-btn"
+            >
+
+                Send Message
+
+                <i class="fas fa-paper-plane"></i>
+
+            </button>
+
+
+            <p
+                id="formMessage"
+                class="form-message"
+            ></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer class="footer">
+
+    <p>
+
+        ©
+        <span id="year"></span>
+
+        Mohamed Abdelmonem.
+        All rights reserved.
+
+    </p>
+
+
+    <div class="footer-links">
+
+        <a
+            href="https://github.com/Mohamedmnem11/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub
+        </a>
+
+
+        <a
+            href="https://www.linkedin.com/in/mohamedmnem"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            LinkedIn
+        </a>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
 </body>
+
 </html>

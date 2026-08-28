@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Project Details | Mohamed Abdelmonem
+  </title>
+
+  <meta
+    name="description"
+    content="Project details, technologies, features and development role by Mohamed Abdelmonem."
+  >
+
+
+  <!-- Google Fonts -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="css/all.min.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+
+  <style>
+
+
+    /* ================================================= */
+    /* DETAILS PAGE */
+    /* ================================================= */
+
+    .details-page {
+
+      min-height: 100vh;
+
+      background: #f7f8fc;
+
+    }
+
+
+    /* ================================================= */
+    /* HERO */
+    /* ================================================= */
+
+    .details-hero {
+
+      padding: 8rem 7% 4rem;
+
+      max-width: 1200px;
+
+      margin: auto;
+
+    }
+
+
+    .back-link {
+
+      display: inline-flex;
+
+      gap: .7rem;
+
+      align-items: center;
+
+      color: #6f42c1;
+
+      font-weight: 700;
+
+      margin-bottom: 3rem;
+
+    }
+
+
+    .details-hero h1 {
+
+      font-size: clamp(
+        3.5rem,
+        6vw,
+        6rem
+      );
+
+      line-height: 1.1;
+
+      margin-bottom: 1rem;
+
+    }
+
+
+    .details-hero p {
+
+      max-width: 850px;
+
+      color: #667085;
+
+      font-size: 1.8rem;
+
+      line-height: 1.7;
+
+      margin: 1.5rem 0 2rem;
+
+    }
+
+
+    /* ================================================= */
+    /* ACTIONS */
+    /* ================================================= */
+
+    .details-actions {
+
+      display: flex;
+
+      gap: 1rem;
+
+      flex-wrap: wrap;
+
+    }
+
+
+    /* ================================================= */
+    /* CONTENT */
+    /* ================================================= */
+
+    .details-content {
+
+      max-width: 1200px;
+
+      margin: auto;
+
+      padding: 3rem 7% 8rem;
+
+    }
+
+
+    .details-grid {
+
+      display: grid;
+
+      grid-template-columns: 1.3fr .7fr;
+
+      gap: 3rem;
+
+    }
+
+
+    /* ================================================= */
+    /* CARDS */
+    /* ================================================= */
+
+    .details-card {
+
+      background: #fff;
+
+      border: 1px solid #e7e9f0;
+
+      border-radius: 18px;
+
+      padding: 2.5rem;
+
+      margin-bottom: 2rem;
+
+    }
+
+
+    .details-card h2 {
+
+      font-size: 2.5rem;
+
+      margin-bottom: 1.2rem;
+
+    }
+
+
+    .details-card p {
+
+      color: #667085;
+
+      line-height: 1.8;
+
+    }
+
+
+    /* ================================================= */
+    /* IMAGE */
+    /* ================================================= */
+
+    .details-image {
+
+      width: 100%;
+
+      border-radius: 14px;
+
+      margin-bottom: 2rem;
+
+      display: block;
+
+    }
+
+
+    /* ================================================= */
+    /* LIST */
+    /* ================================================= */
+
+    .details-list {
+
+      padding-left: 2rem;
+
+      color: #667085;
+
+      line-height: 2;
+
+    }
+
+
+    .details-list li {
+
+      margin-bottom: .5rem;
+
+    }
+
+
+    /* ================================================= */
+    /* TECHNOLOGIES */
+    /* ================================================= */
+
+    .tech-list {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: .8rem;
+
+    }
+
+
+    .tech-list span {
+
+      background: #f7f8fc;
+
+      padding: .7rem 1rem;
+
+      border-radius: 8px;
+
+      font-size: 1.3rem;
+
+      font-weight: 600;
+
+    }
+
+
+    /* ================================================= */
+    /* ACHIEVEMENT */
+    /* ================================================= */
+
+    .achievement {
+
+      background: #f7f8fc;
+
+      border-left: 4px solid #6f42c1;
+
+      padding: 1.5rem;
+
+      border-radius: 10px;
+
+      margin-top: 2rem;
+
+    }
+
+
+    .achievement strong {
+
+      display: block;
+
+      margin-bottom: .5rem;
+
+      color: #6f42c1;
+
+    }
+
+    .achievement-badge {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .achievement-badge img {
+      max-width: 120px;
+      border-radius: 8px;
+      border: 1px solid #e7e9f0;
+    }
+
+
+    /* ================================================= */
+    /* NOT FOUND */
+    /* ================================================= */
+
+    .not-found {
+
+      min-height: 100vh;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+      align-items: center;
+
+      gap: 2rem;
+
+      text-align: center;
+
+      padding: 2rem;
+
+    }
+
+
+    /* ================================================= */
+    /* MOBILE */
+    /* ================================================= */
+
+    @media (max-width: 800px) {
+
+      .details-grid {
+
+        grid-template-columns: 1fr;
+
+      }
+
+
+      .details-hero {
+
+        padding-top: 7rem;
+
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- ================================================= -->
+<!-- HEADER -->
+<!-- ================================================= -->
+
+<header class="header">
+
+
+  <a
+    href="index.html"
+    class="logo"
+  >
+
+    Mohamed<span>.</span>
+
+  </a>
+
+
+
+  <a
+    href="index.html#projects"
+    class="btn primary-btn"
+  >
+
+    Back to Projects
+
+  </a>
+
+
+</header>
+
+
+
+<main class="details-page">
+
+
+
+<!-- ================================================= -->
+<!-- PROJECT HERO -->
+<!-- ================================================= -->
+
+<section class="details-hero">
+
+
+  <a
+    href="index.html#projects"
+    class="back-link"
+  >
+
+    <i class="fas fa-arrow-left"></i>
+
+    Back to Projects
+
+  </a>
+
+
+
+  <p
+    class="eyebrow"
+    id="projectType"
+  ></p>
+
+
+
+  <h1
+    id="projectTitle"
+  ></h1>
+
+
+
+  <p
+    id="projectSummary"
+  ></p>
+
+
+
+  <div class="details-actions">
+
+
+    <a
+      id="demoLink"
+      class="btn primary-btn"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      Live Demo
+
+      <i class="fas fa-external-link-alt"></i>
+
+    </a>
+
+
+
+    <a
+      id="githubLink"
+      class="btn secondary-btn"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      GitHub
+
+      <i class="fab fa-github"></i>
+
+    </a>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- DETAILS -->
+<!-- ================================================= -->
+
+<section class="details-content">
+
+
+  <div class="details-grid">
+
+
+
+    <!-- ================================================= -->
+    <!-- LEFT -->
+    <!-- ================================================= -->
+
+    <div>
+
+
+
+      <!-- OVERVIEW -->
+
+      <article class="details-card">
+
+
+        <img
+          id="mainImage"
+          class="details-image"
+          alt=""
+        >
+
+
+        <h2>
+          Overview
+        </h2>
+
+
+        <p
+          id="overview"
+        ></p>
+
+
+
+        <div
+          class="achievement"
+          id="achievementBox"
+          style="display:none;"
+        >
+
+          <strong>
+            Achievement
+          </strong>
+
+          <span id="achievement"></span>
+
+          <div class="achievement-badge" id="achievementBadge" style="display:none;">
+            <img id="badgeImage" src="" alt="Achievement Badge">
+          </div>
+
+        </div>
+
+
+      </article>
+
+
+
+      <!-- FEATURES -->
+
+      <article class="details-card">
+
+
+        <h2>
+          Key Features
+        </h2>
+
+
+        <ul
+          class="details-list"
+          id="features"
+        ></ul>
+
+
+      </article>
+
+
+
+      <!-- CHALLENGES -->
+
+      <article class="details-card">
+
+
+        <h2>
+          Challenges & Solutions
+        </h2>
+
+
+        <p
+          id="challenges"
+        ></p>
+
+
+      </article>
+
+
+
+      <!-- LEARNED -->
+
+      <article class="details-card">
+
+
+        <h2>
+          What I Learned
+        </h2>
+
+
+        <p
+          id="learned"
+        ></p>
+
+
+      </article>
+
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- RIGHT -->
+    <!-- ================================================= -->
+
+    <aside>
+
+
+
+      <!-- TECHNOLOGIES -->
+
+      <article class="details-card">
+
+
+        <h2>
+          Technologies
+        </h2>
+
+
+        <div
+          class="tech-list"
+          id="technologies"
+        ></div>
+
+
+      </article>
+
+
+
+      <!-- PROJECT INFO -->
+
+      <article class="details-card">
+
+
+        <h2>
+          Project Info
+        </h2>
+
+
+        <p>
+
+          <strong>
+            Role:
+          </strong>
+
+          <span id="role"></span>
+
+        </p>
+
+
+        <p>
+
+          <strong>
+            Status:
+          </strong>
+
+          <span id="status"></span>
+
+        </p>
+
+
+        <p>
+
+          <strong>
+            Category:
+          </strong>
+
+          <span id="category"></span>
+
+        </p>
+
+
+      </article>
+
+
+    </aside>
+
+
+  </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<script>
+
+
+/* ================================================= */
+/* PROJECTS DATA */
+/* ================================================= */
+
+const projects = {
+
+
+  /* ================================================= */
+  /* QURAN TECH - Frontend */
+  /* ================================================= */
+
+  "quran-tech": {
+
+    title:
+      "Quran Tech — Interactive Quran Learning Platform",
+
+    type:
+      "Frontend Development / Graduation Project",
+
+    category:
+      "Frontend",
+
+    summary:
+      "An interactive Quran learning platform developed as a team graduation project and selected among the Top 12 projects at Benha University.",
+
+    image:
+      "image/quran-tech.png",
+
+    overview:
+      "Quran Tech is an interactive Quran learning platform designed to support Quran learning through digital tools and communication between students and qualified teachers. The project was developed collaboratively as a university graduation project. I was responsible for the entire frontend development using React and TypeScript.",
+
+    achievement:
+      "Selected among the Top 12 graduation projects at Benha University.",
+
+    achievementBadge:
+      "image/TopAcheive.jpg",
+
+    features: [
+
+      "Responsive and modern user interface",
+      "Student and teacher dashboards",
+      "Session booking and scheduling",
+      "Recitation learning features",
+      "Evaluation and feedback",
+      "Real-time communication (WebSocket)",
+      "Authentication & authorization UI",
+      "Role-based access control views"
+
+    ],
+
+    technologies: [
+
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "WebSocket",
+      "REST API"
+
+    ],
+
+    challenges:
+      "Implementing a seamless user experience for both students and teachers while ensuring real-time updates and responsive design across devices.",
+
+    learned:
+      "Strengthened my frontend skills with React, TypeScript, state management, real-time communication, and collaborative development in a team environment.",
+
+    role:
+      "Frontend Developer",
+
+    status:
+      "Completed — Graduation Project",
+
+    demo:
+      "",
+
+    github:
+      "https://github.com/MoHAMDY93/Interactive-Platform-for-Learning-and-Reciting-Qur-an"
+
+  },
+
+
+
+  /* ================================================= */
+  /* ROADX - Backend */
+  /* ================================================= */
+
+  "roadx": {
+
+    title:
+      "RoadX — Smart Driving Assistant",
+
+    type:
+      "Backend Development",
+
+    category:
+      "Backend",
+
+    summary:
+      "A real-world smart driving application combining dashcam recording, roadside assistance and driver monitoring.",
+
+    image:
+      "image/roadx.jpeg",
+
+    overview:
+      "RoadX is a smart driving companion designed to support drivers through background dashcam recording, video management, roadside assistance features and driver monitoring. I built the entire backend system including APIs, database, and payment integration.",
+
+    features: [
+
+      "RESTful API for mobile app",
+      "User authentication & JWT",
+      "Video upload and management",
+      "Real-time assistance alerts",
+      "Payment integration",
+      "Driver monitoring data",
+      "Database design (Mongo Atlas)",
+
+    ],
+
+    technologies: [
+
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Stripe/Payment",
+      "WebSocket"
+
+    ],
+
+    challenges:
+      "Handling continuous video uploads, real-time alerts, and ensuring data consistency across multiple services.",
+
+    learned:
+      "Deepened my backend expertise in API design, database modeling, payment gateways, and real-time communication.",
+
+    role:
+      "Backend Developer",
+
+    status:
+      "Published on Google Play",
+
+    demo:
+      "https://play.google.com/store/apps/details?id=com.roadxpert.app",
+
+    // github:
+      // ""
+
+  },
+
+
+
+  /* ================================================= */
+  /* BAKERY */
+  /* ================================================= */
+
+  "bakery": {
+
+    title:
+      "Bakery Website",
+
+    type:
+      "Frontend Development",
+
+    category:
+      "Frontend",
+
+    summary:
+      "A responsive bakery website focused on clean visual presentation and an easy browsing experience.",
+
+    image:
+      "image/bakery.png",
+
+    overview:
+      "A frontend project created to practice responsive layouts, reusable sections, typography and modern website presentation.",
+
+    features: [
+
+      "Responsive layout",
+      "Product presentation",
+      "Clean navigation",
+      "Mobile-friendly interface"
+
+    ],
+
+    technologies: [
+
+      "HTML",
+      "CSS",
+      "JavaScript"
+
+    ],
+
+    challenges:
+      "Creating a consistent layout across different screen sizes while keeping the interface simple and visually clear.",
+
+    learned:
+      "Improved responsive design, layout structure and frontend UI implementation.",
+
+    role:
+      "Frontend Developer",
+
+    status:
+      "Completed",
+
+    demo:
+      "https://mohamedmnem11.github.io/Baker/",
+
+    github:
+      "https://github.com/Mohamedmnem11/Baker"
+
+  },
+
+
+
+  /* ================================================= */
+  /* TRAVEL */
+  /* ================================================= */
+
+  "travel": {
+
+    title:
+      "Travel Website",
+
+    type:
+      "Frontend Development",
+
+    category:
+      "Frontend",
+
+    summary:
+      "A responsive travel website designed to present destinations and content through a modern interface.",
+
+    image:
+      "image/travel.jpg",
+
+    overview:
+      "A frontend project focused on responsive sections, visual hierarchy and creating a smooth browsing experience.",
+
+    features: [
+
+      "Responsive design",
+      "Destination sections",
+      "Modern layout",
+      "Mobile optimization"
+
+    ],
+
+    technologies: [
+
+      "HTML",
+      "CSS",
+      "JavaScript"
+
+    ],
+
+    challenges:
+      "Balancing images, content and responsive layouts without making the page feel crowded.",
+
+    learned:
+      "Improved responsive layouts, visual hierarchy and frontend implementation.",
+
+    role:
+      "Frontend Developer",
+
+    status:
+      "Completed",
+
+    demo:
+      "https://mohamedmnem11.github.io/T_PRo/",
+
+    github:
+      "https://github.com/Mohamedmnem11/T_PRo"
+
+  },
+
+
+
+  /* ================================================= */
+  /* FACEBOOK */
+  /* ================================================= */
+
+  "facebook": {
+
+    title:
+      "Facebook Clone",
+
+    type:
+      "Frontend Development",
+
+    category:
+      "Frontend",
+
+    summary:
+      "A social-media-inspired interface built to practice complex layouts and responsive UI development.",
+
+    image:
+      "image/facebook.jpg",
+
+    overview:
+      "A frontend project focused on reproducing common social platform interface patterns and responsive layouts.",
+
+    features: [
+
+      "Social feed UI",
+      "Responsive layout",
+      "Reusable interface sections",
+      "Visual styling"
+
+    ],
+
+    technologies: [
+
+      "HTML",
+      "CSS",
+      "JavaScript"
+
+    ],
+
+    challenges:
+      "Organizing multiple content sections while keeping the interface usable on smaller screens.",
+
+    learned:
+      "Improved CSS layout techniques, responsive design and UI structuring.",
+
+    role:
+      "Frontend Developer",
+
+    status:
+      "Completed",
+
+    demo:
+      "https://mohamedmnem11.github.io/FaceBook/",
+
+    github:
+      "https://github.com/Mohamedmnem11/FaceBook"
+
+  },
+
+
+
+  /* ================================================= */
+  /* RECIPE */
+  /* ================================================= */
+
+  "recipe": {
+
+    title:
+      "Recipe Website",
+
+    type:
+      "Frontend Development",
+
+    category:
+      "Frontend",
+
+    summary:
+      "A recipe-focused website designed for clear content presentation and an easy browsing experience.",
+
+    image:
+      "image/recipe.png",
+
+    overview:
+      "A frontend project focused on presenting recipes in a clean and responsive interface.",
+
+    features: [
+
+      "Recipe presentation",
+      "Responsive UI",
+      "Clear content hierarchy",
+      "Mobile-friendly layout"
+
+    ],
+
+    technologies: [
+
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "API Integration",
+      "Bootstrap"
+
+    ],
+
+    challenges:
+      "Presenting content clearly while maintaining consistent spacing and responsive behavior.",
+
+    learned:
+      "Improved content-focused UI design and responsive frontend implementation.",
+
+    role:
+      "Frontend Developer",
+
+    status:
+      "Completed",
+
+    demo:
+      "https://mohamedmnem11.github.io/RecipeRest/",
+
+    github:
+      "https://github.com/Mohamedmnem11/RecipeRest"
+
+  },
+
+
+
+  /* ================================================= */
+  /* EXCEL SALES */
+  /* ================================================= */
+
+  "excel-sales": {
+
+    title:
+      "Sales Performance Dashboard",
+
+    type:
+      "Data Analysis & Visualization",
+
+    category:
+      "Excel",
+
+    summary:
+      "Excel-based sales analysis dashboard for tracking performance, trends and business insights.",
+
+    image:
+      "image/excel-sales.png",
+
+    overview:
+      "A comprehensive Excel dashboard designed to analyze sales performance, identify trends, and support data-driven business decisions.",
+
+    features: [
+
+      "Sales performance tracking",
+      "Trend analysis",
+      "Data visualization (charts)",
+      "Business insights reporting",
+      "Interactive filters"
+
+    ],
+
+    technologies: [
+
+      "Excel",
+      "Pivot Tables",
+      "Charts",
+      "Data Analysis"
+
+    ],
+
+    challenges:
+      "Organizing large datasets and creating meaningful visualizations that tell a clear story.",
+
+    learned:
+      "Advanced Excel functions, data analysis techniques, and dashboard design principles.",
+
+    role:
+      "Data Analyst",
+
+    status:
+      "Completed",
+
+    demo:
+      "",
+
+    github:
+      ""
+
+  },
+
+
+
+  /* ================================================= */
+  /* POWER SUPPLY - وصف مفصل */
+  /* ================================================= */
+
+  "power-supply": {
+
+    title:
+      "Power Supply",
+
+    type:
+      "University Project / Electronics",
+
+    category:
+      "University",
+
+    summary:
+      "Design and implementation of a regulated linear DC power supply circuit using analog electronics.",
+
+    image:
+      "image/power-supply.png",
+
+    overview:
+      "This project involved designing a complete linear DC power supply. The circuit converts 220V AC into a stable, adjustable DC output using a step-down transformer, a full-wave bridge rectifier, a capacitive filter, and a voltage regulator IC (LM317). Each stage was carefully designed and tested to ensure efficient and safe power conversion.",
+
+    features: [
+      "Step-down transformer for voltage reduction",
+      "Full-wave bridge rectifier circuit",
+      "Capacitive filter for ripple voltage reduction",
+      "Adjustable voltage regulation (1.25V – 15V) using LM317",
+      "Short-circuit and overload protection",
+      "Practical PCB design and soldering"
+    ],
+
+    technologies: [
+      "Analog Electronics",
+      "PCB Design",
+      "LM317 Regulator",
+      "Oscilloscope Testing"
+    ],
+
+    challenges:
+      "Managing heat dissipation from the voltage regulator, minimizing output ripple voltage to acceptable limits, and selecting the correct capacitor and resistor values for smooth operation.",
+
+    learned:
+      "Gained hands-on experience with analog circuit design, PCB fabrication, thermal management, and using measuring instruments like oscilloscopes and multimeters to validate the circuit.",
+
+    role:
+      "Student / Circuit Designer",
+
+    status:
+      "Completed",
+
+    demo:
+      "",
+
+    github:
+      ""
+  },
+
+
+
+  /* ================================================= */
+  /* DIGITAL CLOCK - وصف مفصل */
+  /* ================================================= */
+
+  "digital-clock": {
+
+    title:
+      "Digital Clock",
+
+    type:
+      "University Project / Digital Systems",
+
+    category:
+      "University",
+
+    summary:
+      "A functional 24-hour digital clock built using logic gates, counters, and 7-segment displays.",
+
+    image:
+      "image/digital-clock.png",
+
+    overview:
+      "This project implements a digital clock using discrete logic ICs. It generates a precise 1Hz clock pulse, counts seconds, minutes, and hours, and displays the time on 7-segment displays. The design focuses on synchronous counting, rollover logic (23:59 → 00:00), and manual time-setting features.",
+
+    features: [
+      "1Hz time base generation using 555 timer or crystal oscillator",
+      "24-hour time format with automatic rollover",
+      "BCD counters (7490) and 7-segment decoders (7447)",
+      "Manual reset buttons for hours and minutes",
+      "Switch debouncing circuits for stable input"
+    ],
+
+    technologies: [
+      "Digital Logic",
+      "Counters (7490)",
+      "7-Segment Displays",
+      "Logic Gates",
+      "555 Timer"
+    ],
+
+    challenges:
+      "Ensuring accurate timekeeping without clock drift, solving contact bounce issues in push buttons, and designing the logic circuit for the 24-hour rollover without glitches.",
+
+    learned:
+      "Strengthened understanding of sequential circuits, timing analysis, counter cascading, and practical IC integration. Also learned the importance of signal integrity and switch debouncing.",
+
+    role:
+      "Student / Digital Designer",
+
+    status:
+      "Completed",
+
+    demo:
+      "",
+
+    github:
+      ""
+  },
+
+
+
+  /* ================================================= */
+  /* 8-BIT CPU - وصف مفصل */
+  /* ================================================= */
+
+  "8bit-cpu": {
+
+    title:
+      "8-BIT CPU",
+
+    type:
+      "University Project / Computer Architecture",
+
+    category:
+      "University",
+
+    summary:
+      "A simulated 8-bit CPU with a custom instruction set, ALU, registers, and control unit.",
+
+    image:
+      "image/bit-cpu.png",
+
+    overview:
+      "This project involves designing a simple yet functional 8-bit CPU architecture. The design includes an Arithmetic Logic Unit (ALU), a register file (Accumulator, B, C, Program Counter), a control unit, and a basic instruction set (MOV, ADD, SUB, JMP, HLT). The CPU was simulated to verify the fetch-decode-execute cycle.",
+
+    features: [
+      "8-bit datapath and registers",
+      "Arithmetic Logic Unit (ALU) with ADD and SUB operations",
+      "Hardwired control unit",
+      "Basic instruction set (MOV, ADD, SUB, JMP, HLT)",
+      "Program counter and instruction fetch logic",
+      "Simulation and timing verification"
+    ],
+
+    technologies: [
+      "Computer Architecture",
+      "Digital Systems",
+      "Verilog/VHDL (Simulation)",
+      "Control Logic"
+    ],
+
+    challenges:
+      "Managing the timing and synchronization between fetch, decode, and execute stages. Designing the control signals to properly route data between registers and the ALU without conflicts.",
+
+    learned:
+      "Deepened my understanding of microarchitecture, instruction pipelines, control signal generation, and the low-level operation of processors. Improved skills in hardware simulation and debugging.",
+
+    role:
+      "Student / Architecture Designer",
+
+    status:
+      "Completed",
+
+    demo:
+      "",
+
+    github:
+      ""
+  }
+
+};
+
+
+/* ================================================= */
+/* LOAD PROJECT */
+/* ================================================= */
+
+const key =
+  new URLSearchParams(location.search).get("project");
+
+
+const project =
+  projects[key];
+
+
+
+if (!project) {
+
+
+  document.body.innerHTML = `
+
+    <div class="not-found">
+
+      <h1>
+        Project not found
+      </h1>
+
+      <a
+        class="btn primary-btn"
+        href="index.html#projects"
+      >
+
+        Back to Projects
+
+      </a>
+
+    </div>
+
+  `;
+
+
+} else {
+
+
+  /* ================================================= */
+  /* BASIC INFORMATION */
+  /* ================================================= */
+
+
+  document.title =
+    `${project.title} | Mohamed Abdelmonem`;
+
+
+  document.querySelector("#projectTitle")
+    .textContent =
+    project.title;
+
+
+  document.querySelector("#projectType")
+    .textContent =
+    project.type;
+
+
+  document.querySelector("#projectSummary")
+    .textContent =
+    project.summary;
+
+
+  document.querySelector("#overview")
+    .textContent =
+    project.overview;
+
+
+  document.querySelector("#challenges")
+    .textContent =
+    project.challenges;
+
+
+  document.querySelector("#learned")
+    .textContent =
+    project.learned;
+
+
+  document.querySelector("#role")
+    .textContent =
+    project.role;
+
+
+  document.querySelector("#status")
+    .textContent =
+    project.status;
+
+
+  document.querySelector("#category")
+    .textContent =
+    project.category;
+
+
+
+  /* ================================================= */
+  /* IMAGE */
+  /* ================================================= */
+
+
+  const mainImage =
+    document.querySelector("#mainImage");
+
+
+  if (project.image) {
+
+
+    mainImage.src =
+      project.image;
+
+
+    mainImage.alt =
+      `${project.title} screenshot`;
+
+
+  } else {
+
+
+    mainImage.style.display =
+      "none";
+
+  }
+
+
+
+  /* ================================================= */
+  /* ACHIEVEMENT */
+  /* ================================================= */
+
+
+  if (project.achievement) {
+
+
+    document.querySelector("#achievement")
+      .textContent =
+      project.achievement;
+
+
+    document.querySelector("#achievementBox")
+      .style.display =
+      "block";
+
+    // صورة الإنجاز إن وجدت
+    if (project.achievementBadge) {
+      document.querySelector("#badgeImage").src = project.achievementBadge;
+      document.querySelector("#achievementBadge").style.display = "flex";
+    }
+
+  }
+
+
+
+  /* ================================================= */
+  /* DEMO LINK */
+  /* ================================================= */
+
+
+  const demoLink =
+    document.querySelector("#demoLink");
+
+
+  if (project.demo) {
+
+
+    demoLink.href =
+      project.demo;
+
+
+  } else {
+
+
+    demoLink.style.display =
+      "none";
+
+  }
+
+
+
+  /* ================================================= */
+  /* GITHUB */
+  /* ================================================= */
+
+
+  const githubLink =
+    document.querySelector("#githubLink");
+
+
+  if (project.github) {
+
+
+    githubLink.href =
+      project.github;
+
+
+  } else {
+
+
+    githubLink.style.display =
+      "none";
+
+  }
+
+
+
+  /* ================================================= */
+  /* FEATURES */
+  /* ================================================= */
+
+
+  document.querySelector("#features")
+    .innerHTML =
+
+    project.features
+
+      .map(
+        item =>
+          `<li>${item}</li>`
+      )
+
+      .join("");
+
+
+
+  /* ================================================= */
+  /* TECHNOLOGIES */
+  /* ================================================= */
+
+
+  document.querySelector("#technologies")
+    .innerHTML =
+
+    project.technologies
+
+      .map(
+        item =>
+          `<span>${item}</span>`
+      )
+
+      .join("");
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
